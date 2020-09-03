@@ -1,0 +1,37 @@
+{
+  "name": "scroll-sniffer",
+  "version": "1.0.0",
+  "description": "Rock solid event handlers for elements scrolling in and out of the viewport.",
+  "main": "src/scroll-sniffer.js",
+  "unpkg": "dist/js/scroll-sniffer.min.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylewetton/scroll-sniffer.git"
+  },
+  "keywords": [
+    "scroll",
+    "events",
+    "javascript"
+  ],
+  "author": "Kyle Wetton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylewetton/scroll-sniffer/issues"
+  },
+  "homepage": "https://github.com/kylewetton/scroll-sniffer#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.5",
+    "webpack-cli": "^3.3.12"
+  }
+}
