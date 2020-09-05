@@ -1,6 +1,6 @@
 {
   "name": "scroll-sniffer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Rock solid event handlers for elements scrolling in and out of the viewport.",
   "main": "src/scroll-sniffer.js",
   "unpkg": "dist/js/scroll-sniffer.min.js",
