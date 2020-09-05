@@ -15,11 +15,7 @@ class ScrollSniffer {
   }
 
   listen() {
-    if (!this.listenerElement.length) {
-      console.error("No elements to listen to!");
-    } else {
-      this._addEvents();
-    }
+    this._addEvents();
   }
 
   _addEvents() {
@@ -72,7 +68,9 @@ class ScrollSniffer {
       this.scrollTop = window.scrollY;
       this.scrollBottom = window.scrollY + window.innerHeight;
 
-      this._watchListeners();
+      if (this.listenerElement.length) {
+        this._watchListeners();
+      }
 
       if (this.oldScroll > this.scrollTop) {
         if (this.scrollingDown && !this.scrollingUp) {
